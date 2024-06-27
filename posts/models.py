@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from tags.models import Tag
 
 
 class Post(models.Model):
@@ -14,6 +15,7 @@ class Post(models.Model):
     image = models.ImageField(
         upload_to='images/', default='../default_post_vpipga', blank=True
     )
+    tags = models.ManyToManyField(Tag, related_name='posts', blank=True)
 
     class Meta:
         ordering = ['-created_at']
