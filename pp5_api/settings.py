@@ -198,7 +198,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CSRF settings
-CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ollebrask-pp5api-k4gox9bxmr6.ws-eu114.gitpod.io',
-    'https://pp5-olle-4b42abf5cfb4.herokuapp.com/'
-]
+#CSRF_TRUSTED_ORIGINS = [
+#    'https://8000-ollebrask-pp5api-k4gox9bxmr6.ws-eu114.gitpod.io',
+#    'https://pp5-olle-4b42abf5cfb4.herokuapp.com/'
+#]
