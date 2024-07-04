@@ -19,7 +19,8 @@ class Tag(models.Model):
         max_length=100, 
         unique=True, 
         validators=[validate_tag_name],
-        null=False
+        null=False,
+        blank=False
     )
 
     class Meta:
