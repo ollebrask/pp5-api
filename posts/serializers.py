@@ -43,6 +43,23 @@ class PostSerializer(serializers.ModelSerializer):
             return like.id if like else None
         return None
 
+    def create(self, validated_data):
+        tags_data = validated_data.pop('tags', [])
+        post = Post.objects.create(**validated_data)
+        for tag_name in tags_data:
+            tag, created = Tag.objects.get_or_create(name=tag_name)
+            post.tags.add(tag)
+        return post
+
+    def update(self, instance, validated_data):
+        tags_data = validated_data.pop('tags', [])
+        instance = super().update(instance, validated_data)
+        instance.tags.clear()
+        for tag_name in tags_data:
+            tag, created = Tag.objects.get_or_create(name=tag_name)
+            instance.tags.add(tag)
+        return instance
+
     class Meta:
         model = Post
         fields = [
