@@ -198,7 +198,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
-CORS_ALLOW_ALL_ORIGINS = False  # Sätt detta till False för att begränsa till specifika domäner
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
-    'https://coldbeer-e9a4ef1fda7f.herokuapp.com',  # Lägg till din frontend URL här
+    'https://coldbeer-e9a4ef1fda7f.herokuapp.com',
 ]
