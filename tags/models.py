@@ -2,6 +2,7 @@ from django.db import models
 from django.core.exceptions import ValidationError
 import re
 
+
 # found at:
 # https://stackoverflow.com/questions/16982625
 # /only-accept-alphanumeric-characters-and-underscores-for-a-string-in-python
@@ -16,8 +17,8 @@ class Tag(models.Model):
     Tag model for hashtags.
     """
     name = models.CharField(
-        max_length=100, 
-        unique=True, 
+        max_length=100,
+        unique=True,
         validators=[validate_tag_name],
         null=False,
         blank=False

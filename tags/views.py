@@ -3,6 +3,7 @@ from rest_framework import permissions
 from .models import Tag
 from .serializers import TagSerializer
 
+
 class TagList(generics.ListCreateAPIView):
     """
     List tags or create a new tag.
@@ -10,6 +11,7 @@ class TagList(generics.ListCreateAPIView):
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
 
 class TagDetail(generics.RetrieveUpdateDestroyAPIView):
     """
