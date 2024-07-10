@@ -1,116 +1,148 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Cold Beer
 
-Welcome Olle Brask,
+Cold Beer is my final project for Code Institute, serving as a vibrant platform designed for beer enthusiasts to explore and share their favorite brews. This site enables users to effortlessly browse posts about different beer varieties, breweries, and tasting experiences. The inclusion of user accounts allows individuals to create personalized posts, engage with the community through likes and comments, and track their favorite posts for future reference. A user-friendly contact form facilitates seamless communication with the site administrators.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Deployed API Heroku: [API link](https://pp5-olle-4b42abf5cfb4.herokuapp.com/)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 14, 2024**
+Deployed Frontend Heroku: [Cold Beer](https://coldbeer-e9a4ef1fda7f.herokuapp.com/)
 
-## Gitpod Reminders
+Backend Github [Repository](https://github.com/ollebrask/pp5-api)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Frontend Github [Repository](https://github.com/ollebrask/coldbeer)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## User Stories
 
-Another blue button should appear to click: _Open Browser_.
+I have created user stories with Github Issues and this is the [KANBAN board](https://github.com/users/ollebrask/projects/5/).
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Database Diagram
 
-A blue button should appear to click: _Make Public_,
+[Database Diagram](/documentation/erd.png)
 
-Another blue button should appear to click: _Open Browser_.
+## Technologies Used
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Languages Used
 
-To log into the Heroku toolbelt CLI:
+* [Python 3.12.2](https://www.python.org/downloads/release/python-3122/): the primary language used to develop the api.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Database
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+* [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/)
 
-------
+### Frameworks Used
 
-## Release History
+* [Django Project](https://www.djangoproject.com/) - A framework to build the app.
+* [Django REST Framework](https://www.django-rest-framework.org/) - A toolkit for building Web APIs
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Packages Used
 
-**June 14, 2024,** Temporarily remove Mongo until key issue is resolved
+* [Asgiref](https://pypi.org/project/asgiref/) - Contains various ASGI-related helpers and utilities.
+* [Cloudinary](https://cloudinary.com/) - To host images.
+* [Cryptography](https://pypi.org/project/cryptography/) - Provides cryptographic recipes and primitives to Python developers.
+* [Dj_database_url](https://pypi.org/project/dj-database-url/) - To parse the database URL from the environment variables in Heroku.
+* [Dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/) - Provides a set of REST API endpoints for Django authentication.
+* [Django](https://www.djangoproject.com/) - High-level Python web framework that encourages rapid development and clean, pragmatic design.
+* [Django-allauth](https://django-allauth.readthedocs.io/en/latest/) - For authentication, registration, account management.
+* [Django-cloudinary-storage](https://pypi.org/project/django-cloudinary-storage/) - A Django package that facilitates integration with Cloudinary.
+* [Django-cors-headers](https://pypi.org/project/django-cors-headers/) - To allow in-browser requests to Django application from other origins.
+* [Django-filter](https://django-filter.readthedocs.io/en/latest/guide/rest_framework.html#adding-a-filterset-with-filterset-class) - To create range filters.
+* [Djangorestframework](https://www.django-rest-framework.org/) - Powerful and flexible toolkit for building Web APIs.
+* [Djangorestframework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/) - Provides a JSON Web Token authentication backend for the Django REST Framework.
+* [Gunicorn](https://gunicorn.org/) - As the server for Heroku.
+* [Oauthlib](https://pypi.org/project/oauthlib/) - A generic, spec-compliant, thorough implementation of the OAuth request-signing logic.
+* [Pillow](https://pypi.org/project/pillow/) - Image Processing.
+* [Psycopg2](https://pypi.org/project/psycopg2/) - As an adaptor for Python and PostgreSQL databases.
+* [PyJWT](https://pyjwt.readthedocs.io/en/stable/) - JSON Web Token implementation in Python.
+* [Python3-openid](https://pypi.org/project/python3-openid/) - Python OpenID library.
+* [Pytz](https://pypi.org/project/pytz/) - World Timezone Definitions for Python.
+* [Requests-oauthlib](https://pypi.org/project/requests-oauthlib/) - OAuthlib support for Python Requests.
+* [Setuptools](https://pypi.org/project/setuptools/) - Easily download, build, install, upgrade, and uninstall Python packages.
+* [Sqlparse](https://pypi.org/project/sqlparse/) - A non-validating SQL parser.
+* [Urllib3](https://pypi.org/project/urllib3/) - HTTP library with thread-safe connection pooling, file post support, user friendly, and more.
 
-**May 28 2024:** Fix Mongo and Links installs
+### Tools Used
 
-**April 26 2024:** Update node version to 16
+* [GitHub](https://github.com/): used to host the website's source code.
+* [GitPod](https://gitpod.io/): the IDE used to develop the website.
+* [CI Python Linter](https://pep8ci.herokuapp.com/): was used to validate Python code.
+* [Lucidchart](https://www.lucidchart.com/): To create the ERD.
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Deployment
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- The program was deployed to [Heroku](https://dashboard.heroku.com).
+- If you don't already have an account to Cloudinary, create one [here](https://cloudinary.com/).
+- For students of Code Institute, create a database [here](https://dbs.ci-dbs.net/)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+1. Open the repository in GitPod
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+2. Install the dependencies:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    - Open the terminal window and type:
+    - `pip3 install -r requirements.txt`
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+3. Create a `env.py` file. Add this code printed below. os.environ['DEV'] = '1' should be commented out to be able to migrate to an external database.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    ```python
+    import os
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    os.environ['CLOUDINARY_URL'] = 'Your cloudinary url'
+    # os.environ['DEV'] = '1'
+    os.environ['DATABASE_URL'] = "Your database url"
+    os.environ.setdefault("SECRET_KEY", "Your secret key")
+    ```
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
+4. Run the following commands in a terminal to make migrations: 
+    - `python3 manage.py makemigrations`
+    - `python3 manage.py migrate`
+5. Create a superuser to get access to the admin environment.
+    - `python3 manage.py createsuperuser`
+    - Enter the required information (your username, email and password).
 ```
 
-**Anything more?**
+### To deploy the project to Heroku:
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+1.  Login to your account at [Heroku](https://dashboard.heroku.com)
 
----
+2.	Click "New" to create a new app.
 
-Happy coding!
+3.	Select a unique name, selected the region, and click Create app.
+
+4.	Within the created app, select the tab, Settings.
+
+5.	At the Config Vars section, click Reveal Config Vars.
+
+6.	Add Config Vars:
+- `ALLOWED_HOST` = .herokuapp.com
+- `CLOUDINARY_URL` = Your cloudinary url
+- `DATABASE_URL` = Your database url
+- `DISABLE_COLLECTSTATIC` = 1
+- `SECRET_KEY` = Your secret key
+
+7.	Commit and push to GitHub
+
+8.	Back to Heroku, go to the deployment tab.
+
+9.	Select GitHub as the deployment method and connected to GitHub.
+
+10.	Search for repository name and Connect.
+
+11.	Click Deploy Branch. Click the View button when it is done.
+
+
+## Testing
+
+Please see [Testing](TESTING.md)
+
+## Credits
+
+- [Code Institute's](https://codeinstitute.net/) - Walkthrough project for Django REST Framework
+- [Heroku](https://www.heroku.com/) for hosting the site.
+- For tips and help: [Stackoverflow](https://stackoverflow.com)
+- Github were used to store my repository: [GitHub](https://github.com)
+- Django documentation for learning [Django](https://docs.djangoproject.com/en/5.0/)
+
+### Acknowledgments
+
+- My mentor for valuable feedback! [Iuliia Konovalova](https://github.com/IuliiaKonovalova)
+- The tutors at Code Institute for debugging.
