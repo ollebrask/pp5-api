@@ -15,9 +15,9 @@ Frontend Github [Repository](https://github.com/ollebrask/coldbeer)
 
 I have created user stories with Github Issues and this is the [KANBAN board](https://github.com/users/ollebrask/projects/5/).
 
-## Database Diagram
+## ERD
 
-[Database Diagram](/documentation/erd.png)
+[ERD](/documentation/erd.png)
 
 ## Technologies Used
 
