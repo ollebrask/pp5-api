@@ -98,7 +98,6 @@ I have created user stories with Github Issues and this is the [KANBAN board](ht
 5. Create a superuser to get access to the admin environment.
     - `python3 manage.py createsuperuser`
     - Enter the required information (your username, email and password).
-```
 
 ### To deploy the project to Heroku:
 
